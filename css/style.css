@@ -2,7 +2,7 @@
   -webkit-box-shadow: none !important;
   box-shadow: none !important; }
 
-.navbar {
+.offcanvas-header {
   margin-top: 1rem; }
 
 .offcanvas-header .btn-close {
@@ -7857,6 +7857,9 @@ textarea.form-control-lg {
     display: inline-flex !important; }
   .d-print-none {
     display: none !important; } }
+
+body {
+  height: 2500px; }
 
 .logo {
   min-width: 200px; }

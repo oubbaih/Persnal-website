@@ -1,73 +1,3 @@
-// Custom.scss
-$offCanvace-color-body: #0f141e;
-$text-color: #8b8e93;
-// NavBar shadow reset
-.navbar-toggler:focus {
-  -webkit-box-shadow: none !important;
-  box-shadow: none !important;
-}
-
-// btn close customize
-.navbar {
-  margin-top: 1rem;
-}
-.offcanvas-header .btn-close {
-  font-weight: 32px;
-  position: relative;
-  background: transparent
-    url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%238b8e93'%3e%3cpath d='M.293.293a1 1 0 011.414 0L8 6.586 14.293.293a1 1 0 111.414 1.414L9.414 8l6.293 6.293a1 1 0 01-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 01-1.414-1.414L6.586 8 .293 1.707a1 1 0 010-1.414z'/%3e%3c/svg%3e");
-  &::before {
-    content: 'Close';
-    position: absolute;
-    right: 50%;
-    transform: translate();
-    top: 41%;
-    transform: translate(-50%, -50%);
-    font-weight: bold;
-    text-transform: uppercase;
-    color: $text-color;
-  }
-  &:hover {
-    background: transparent
-      url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath d='M.293.293a1 1 0 011.414 0L8 6.586 14.293.293a1 1 0 111.414 1.414L9.414 8l6.293 6.293a1 1 0 01-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 01-1.414-1.414L6.586 8 .293 1.707a1 1 0 010-1.414z'/%3e%3c/svg%3e");
-    &::before {
-      color: #fff;
-    }
-  }
-}
-.offcanvas-title {
-  svg {
-    fill: $text-color;
-  }
-  svg :hover {
-    fill: '#fff';
-  }
-}
-.offcanvas-body {
-  padding: 4rem 0rem !important;
-  .navbar-nav {
-    .nav-item {
-      .nav-link {
-        color: $text-color;
-        font-weight: bold;
-        font-size: 24px;
-        text-transform: capitalize;
-        &:hover {
-          color: #fff;
-        }
-      }
-    }
-  }
-}
-// custmize offCanvas Show
-.offcanvas-backdrop.show {
-  opacity: 0;
-}
-.offcanvas.show {
-  height: 100vh;
-  background-color: $offCanvace-color-body;
-}
-
 // Option A: Include all of Bootstrap
 
 // Include any default variable overrides here (though functions won't b#878a8fe available)
@@ -75,3 +5,6 @@ $text-color: #8b8e93;
 @import '../node_modules/bootstrap/scss/bootstrap';
 
 // Then add additional custom code here
+body {
+  height: 2500px;
+}

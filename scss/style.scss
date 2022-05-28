@@ -2,7 +2,7 @@
 .logo {
   min-width: 200px;
   &:hover {
-    fill: gray;
+    fill: $text-color;
   }
 }
 .menu {

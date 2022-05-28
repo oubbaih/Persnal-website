@@ -1,1 +1,19 @@
 @import 'custom';
+.logo {
+  min-width: 200px;
+  &:hover {
+    fill: gray;
+  }
+}
+.menu {
+  font-family: 'Helvetica Now Display DW';
+  font-weight: bold;
+  font-size: 18px;
+  .bars {
+    span {
+      width: 50px;
+      height: 20px;
+      background-color: #000;
+    }
+  }
+}

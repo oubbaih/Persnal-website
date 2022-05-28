@@ -9,11 +9,20 @@
   font-family: 'Helvetica Now Display DW';
   font-weight: bold;
   font-size: 18px;
-  .bars {
-    span {
-      width: 50px;
-      height: 20px;
-      background-color: #000;
-    }
+}
+
+.menulogo {
+  &:hover svg {
+    fill: #ffff;
   }
+  svg {
+    fill: $text-color;
+  }
+}
+
+.copyright {
+  text-align: center;
+  color: $text-color;
+  font-size: 0.9rem;
+  text-transform: capitalize;
 }

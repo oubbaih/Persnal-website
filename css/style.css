@@ -7864,7 +7864,7 @@ body {
 
 .header {
   margin-top: 5rem;
-  min-height: 85vh; }
+  min-height: 70vh; }
   .header_logo {
     position: absolute;
     top: 5rem;
@@ -7896,7 +7896,8 @@ body {
     .header_content-icon {
       margin-top: 2rem;
       display: flex;
-      color: #000; }
+      color: #000;
+      margin-bottom: 5rem; }
       .header_content-icon:hover {
         color: #8b8e93; }
       .header_content-icon svg {
@@ -7932,10 +7933,126 @@ body {
   to {
     transform: translateY(40px); } }
 
+.case-study_project {
+  color: #8b8e93;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  margin-top: 2rem; }
+
+.case-study_title {
+  text-transform: capitalize;
+  font-weight: bold;
+  font-size: 5rem; }
+
+.case-study .card {
+  border: none !important;
+  border-radius: 0rem !important; }
+  .case-study .card-img {
+    min-height: 65vh; }
+    .case-study .card-img-overlay {
+      padding: 2rem; }
+      .case-study .card-img-overlay:hover {
+        background-color: rgba(15, 20, 30, 0.9); }
+  .case-study .card-text {
+    color: #8b8e93;
+    letter-spacing: 2px; }
+  .case-study .card-link {
+    color: #8b8e93;
+    text-decoration: none;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    font-size: 0.9rem; }
+    .case-study .card-link span {
+      margin-left: 0px; }
+    .case-study .card-link:hover span {
+      color: #fff;
+      transition: all 0.5s ease-in-out;
+      margin-left: 10px; }
+  .case-study .card-title {
+    width: 300px;
+    text-transform: capitalize;
+    font-weight: bold;
+    font-size: 2rem;
+    letter-spacing: 2px; }
+
+.contact {
+  position: fixed;
+  z-index: 12;
+  left: 10px;
+  bottom: 30px;
+  background-color: rgba(15, 20, 30, 0.5);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .contact_icon {
+    text-decoration: none; }
+  .contact_icon svg {
+    fill: #fff;
+    margin-top: 24px;
+    margin-left: 18px; }
+  .contact:hover .contact_icon svg {
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 10px; }
+  .contact_name {
+    opacity: 0;
+    color: #fff; }
+  .contact:hover .contact_name {
+    transition: opacity 0.8s ease-in-out;
+    opacity: 1; }
+  .contact:hover {
+    width: 200px;
+    transition: width 0.5s ease-in-out;
+    border-radius: 50px 50px 50px 50px;
+    background-color: #0f141e; }
+
+.work_alert {
+  color: #8b8e93;
+  letter-spacing: 2px;
+  text-transform: uppercase; }
+
+.work_link a {
+  color: #000;
+  text-decoration: none;
+  text-transform: capitalize;
+  font-size: 4rem !important;
+  font-weight: bold;
+  position: relative; }
+  .work_link a:hover:before {
+    position: absolute;
+    bottom: -19px;
+    left: 0;
+    content: '';
+    width: 100%;
+    height: 5px;
+    background-color: #000; }
+
+.work_link span {
+  margin-left: 10px;
+  font-size: 3rem; }
+
+.footer {
+  margin-top: 5rem; }
+  .footer_title {
+    text-transform: capitalize;
+    font-size: 2.5rem; }
+  .footer_text {
+    color: #8b8e93; }
+  .footer .nav-link {
+    color: #000;
+    text-transform: capitalize; }
+    .footer .nav-link:hover {
+      color: #8b8e93; }
+
+body {
+  font-family: 'Helvetica Now Display DW', sans-serif;
+  overflow-x: hidden; }
+
 .logo {
   min-width: 200px; }
-  .logo:hover {
-    fill: #8b8e93; }
 
 .menu {
   font-family: 'Helvetica Now Display DW';

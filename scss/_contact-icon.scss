@@ -1,0 +1,40 @@
+.contact {
+  position: fixed;
+  z-index: 12;
+  left: 10px;
+  bottom: 30px;
+  background-color: rgba($offCanvace-color-body, 0.5);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &_icon {
+    text-decoration: none;
+  }
+  &_icon svg {
+    fill: #fff;
+    margin-top: 24px;
+    margin-left: 18px;
+  }
+  &:hover &_icon svg {
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 10px;
+  }
+  &_name {
+    opacity: 0;
+    color: #fff;
+  }
+  &:hover &_name {
+    transition: opacity 0.8s ease-in-out;
+    opacity: 1;
+  }
+  &:hover {
+    width: 200px;
+    transition: width 0.5s ease-in-out;
+    border-radius: 50px 50px 50px 50px;
+    background-color: $offCanvace-color-body;
+  }
+}

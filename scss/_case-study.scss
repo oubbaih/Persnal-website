@@ -1,4 +1,52 @@
 .case-study {
-  // margin-top: 5rem;
-  // display: flex;
+  &_project {
+    color: $text-color;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    margin-top: 2rem;
+  }
+  &_title {
+    text-transform: capitalize;
+    font-weight: bold;
+    font-size: 5rem;
+  }
+  .card {
+    border: none !important;
+    border-radius: 0rem !important;
+    &-img {
+      min-height: 65vh;
+      &-overlay {
+        padding: 2rem;
+        &:hover {
+          background-color: rgba($offCanvace-color-body, 0.9);
+        }
+      }
+    }
+    &-text {
+      color: $text-color;
+      letter-spacing: 2px;
+    }
+    &-link {
+      color: $text-color;
+      text-decoration: none;
+      text-transform: capitalize;
+      letter-spacing: 2px;
+      font-size: 0.9rem;
+      span {
+        margin-left: 0px;
+      }
+      &:hover span {
+        color: #fff;
+        transition: all 0.5s ease-in-out;
+        margin-left: 10px;
+      }
+    }
+    &-title {
+      width: 300px;
+      text-transform: capitalize;
+      font-weight: bold;
+      font-size: 2rem;
+      letter-spacing: 2px;
+    }
+  }
 }

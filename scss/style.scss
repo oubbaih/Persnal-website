@@ -2,11 +2,15 @@
 @import 'custom';
 @import 'header';
 @import 'case-study';
+@import 'contact-icon';
+@import 'work';
+@import 'footer';
+body {
+  font-family: 'Helvetica Now Display DW', sans-serif;
+  overflow-x: hidden;
+}
 .logo {
   min-width: 200px;
-  &:hover {
-    fill: $text-color;
-  }
 }
 .menu {
   font-family: 'Helvetica Now Display DW';

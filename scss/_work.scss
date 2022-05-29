@@ -1,0 +1,30 @@
+.work {
+  &_alert {
+    color: $text-color;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+  &_link {
+    a {
+      color: #000;
+      text-decoration: none;
+      text-transform: capitalize;
+      font-size: 4rem !important;
+      font-weight: bold;
+      position: relative;
+      &:hover:before {
+        position: absolute;
+        bottom: -19px;
+        left: 0;
+        content: '';
+        width: 100%;
+        height: 5px;
+        background-color: #000;
+      }
+    }
+    span {
+      margin-left: 10px;
+      font-size: 3rem;
+    }
+  }
+}

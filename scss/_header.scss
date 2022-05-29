@@ -1,7 +1,7 @@
 .header {
   // position: relative;
   margin-top: 5rem;
-  min-height: 85vh;
+  min-height: 70vh;
   &_logo {
     position: absolute;
     top: 5rem;
@@ -47,6 +47,7 @@
       margin-top: 2rem;
       display: flex;
       color: #000;
+      margin-bottom: 5rem;
       &:hover {
         color: $text-color;
       }

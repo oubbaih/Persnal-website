@@ -31,7 +31,8 @@
   fill: '#fff'; }
 
 .offcanvas-body {
-  padding: 4rem 0rem !important; }
+  padding: 4rem 0rem !important;
+  min-height: calc(90vh - 78px - 21.6px); }
   .offcanvas-body .navbar-nav .nav-item .nav-link {
     color: #8b8e93;
     font-weight: bold;
@@ -7862,8 +7863,8 @@ body {
   height: 2500px; }
 
 .header {
-  position: relative;
-  margin-top: 5rem; }
+  margin-top: 5rem;
+  min-height: 85vh; }
   .header_logo {
     position: absolute;
     top: 5rem;
@@ -7883,9 +7884,53 @@ body {
       margin-top: 16rem; }
     .header_content-user {
       color: #8b8e93;
-      letter-spacing: 10px;
+      letter-spacing: 5px;
       text-transform: uppercase;
       margin-top: 2rem; }
+    .header_content-job {
+      text-transform: capitalize;
+      font-weight: bold;
+      font-size: 5rem; }
+    .header_content-wrap-info {
+      color: #8b8e93; }
+    .header_content-icon {
+      margin-top: 2rem;
+      display: flex;
+      color: #000; }
+      .header_content-icon:hover {
+        color: #8b8e93; }
+      .header_content-icon svg {
+        margin: auto;
+        animation-name: IconAnimate;
+        animation-duration: 4s;
+        animation-delay: -2s;
+        animation-iteration-count: infinite; }
+    .header_content-links {
+      color: #000 !important;
+      text-transform: capitalize;
+      font-weight: bold;
+      font-size: 1.2rem;
+      text-decoration: none;
+      position: relative; }
+      .header_content-links::before {
+        content: '';
+        position: absolute;
+        bottom: -7px;
+        left: 0;
+        width: 100%;
+        height: 3px;
+        background-color: #000;
+        display: none;
+        transition: all 1s ease-in-out; }
+      .header_content-links:hover:before {
+        display: block;
+        color: #000 !important; }
+
+@keyframes IconAnimate {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(40px); } }
 
 .logo {
   min-width: 200px; }

@@ -47,6 +47,7 @@ $text-color: #8b8e93;
 }
 .offcanvas-body {
   padding: 4rem 0rem !important;
+  min-height: calc(90vh - 78px - 21.6px);
   .navbar-nav {
     .nav-item {
       .nav-link {

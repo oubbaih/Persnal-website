@@ -1,0 +1,21 @@
+.header {
+  position: relative;
+  margin-top: 5rem;
+  &_logo {
+    position: absolute;
+    top: 5rem;
+    z-index: 1;
+    transform: translateX(50%);
+    right: 50%;
+    &-img {
+      opacity: 0.05;
+    }
+  }
+
+  &_personal {
+    width: 25%;
+    position: absolute;
+    z-index: 2;
+    right: 0;
+  }
+}

@@ -6,6 +6,6 @@ window.addEventListener('scroll', (event) => {
     navbarTop.style =
       'background-color:rgb(240, 240, 240); transition:background-color  ease-in-out 0.1s';
   } else {
-    navbarTop.style = 'background-color:none';
+    navbarTop.style = 'background-color:transparent';
   }
 });

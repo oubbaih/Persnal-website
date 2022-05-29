@@ -7861,6 +7861,23 @@ textarea.form-control-lg {
 body {
   height: 2500px; }
 
+.header {
+  position: relative;
+  margin-top: 5rem; }
+  .header_logo {
+    position: absolute;
+    top: 5rem;
+    z-index: 1;
+    transform: translateX(50%);
+    right: 50%; }
+    .header_logo-img {
+      opacity: 0.05; }
+  .header_personal {
+    width: 25%;
+    position: absolute;
+    z-index: 2;
+    right: 0; }
+
 .logo {
   min-width: 200px; }
   .logo:hover {

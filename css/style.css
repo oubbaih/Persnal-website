@@ -7872,9 +7872,6 @@ textarea.form-control-lg {
   .d-print-none {
     display: none !important; } }
 
-body {
-  height: 2500px; }
-
 .header {
   margin-top: 5rem;
   min-height: calc(80vh); }
@@ -8078,7 +8075,8 @@ body {
   font-size: 3rem; }
 
 .footer {
-  margin-top: 5rem; }
+  margin-top: 5rem;
+  padding: 5rem; }
   .footer_title {
     text-transform: capitalize;
     font-size: 2.5rem; }
@@ -8100,6 +8098,12 @@ body {
 @media (min-width: 768px) {
   .header_logo-img {
     width: 70%; } }
+
+.navigation {
+  margin-bottom: 5rem; }
+
+.about-main {
+  min-height: calc(100vh - 400px); }
 
 body {
   font-family: 'Helvetica Now Display DW', sans-serif;
@@ -8144,7 +8148,7 @@ body {
     background-color: #0f141e; }
 
 .loader {
-  position: relative;
+  position: fixed;
   z-index: 100;
   background-color: #0f141e;
   width: 100vw;

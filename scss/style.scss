@@ -12,6 +12,11 @@ body {
 }
 .logo {
   min-width: 200px;
+  @include media-breakpoint-down(sm) {
+    svg:first-child {
+      display: none;
+    }
+  }
 }
 .menu {
   font-family: 'Helvetica Now Display DW';
@@ -33,4 +38,106 @@ body {
   color: $text-color;
   font-size: 0.9rem;
   text-transform: capitalize;
+}
+
+//Go Up Start
+.goup {
+  position: fixed;
+  bottom: 1rem;
+  right: 0.5rem;
+  z-index: 20;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  &_icon {
+    svg {
+      fill: #fff;
+      margin: 12px;
+    }
+  }
+
+  background-color: rgba($offCanvace-color-body, 0.5);
+  &:hover {
+    background-color: $offCanvace-color-body;
+  }
+}
+
+// loader css
+
+.loader {
+  position: relative;
+  z-index: 100;
+  background-color: $offCanvace-color-body;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  overflow-y: hidden;
+  &_icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 300;
+    animation-name: circleAnimate;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+  }
+  &_text {
+    position: absolute;
+    z-index: 400;
+    bottom: 20%;
+    left: 5%;
+    color: #fff;
+    animation-name: animateTitle;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+    &-title {
+      font-size: 1.2rem;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+    &-des {
+      font-size: 3rem;
+      text-transform: capitalize;
+    }
+  }
+}
+.hide {
+  display: none;
+}
+.show {
+  display: block;
+}
+
+@keyframes circleAnimate {
+  0% {
+    width: 20px;
+    height: 20px;
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 50%;
+  }
+  0% {
+    width: 30px;
+    height: 30px;
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 50%;
+  }
+  100% {
+    width: 40px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 50%;
+  }
+}
+
+@keyframes animateTitle {
+  from {
+    bottom: -20%;
+  }
+  to {
+    bottom: 20%;
+  }
 }

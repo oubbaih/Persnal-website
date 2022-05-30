@@ -11,7 +11,7 @@ $text-color: #8b8e93;
 
 .offcanvas-body .navbar-nav .nav-item .nav-link:hover {
   font-size: 4rem;
-  transition: all 0.5s ease-in;
+  transition: font-size 0.5s ease-in;
   position: relative;
   &::before {
     content: '';
@@ -38,7 +38,6 @@ $text-color: #8b8e93;
     content: 'Close';
     position: absolute;
     right: 50%;
-    transform: translate();
     top: 41%;
     transform: translate(-50%, -50%);
     font-weight: bold;

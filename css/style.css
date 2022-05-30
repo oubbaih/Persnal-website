@@ -4,7 +4,7 @@
 
 .offcanvas-body .navbar-nav .nav-item .nav-link:hover {
   font-size: 4rem;
-  transition: all 0.5s ease-in;
+  transition: font-size 0.5s ease-in;
   position: relative; }
   .offcanvas-body .navbar-nav .nav-item .nav-link:hover::before {
     content: '';
@@ -27,7 +27,6 @@
     content: 'Close';
     position: absolute;
     right: 50%;
-    transform: translate();
     top: 41%;
     transform: translate(-50%, -50%);
     font-weight: bold;
@@ -7904,7 +7903,7 @@ body {
     @media (max-width: 767.98px) {
       .header_content {
         top: 32%;
-        justify-content: center; } }
+        justify-content: flex-start; } }
     .header_content .space {
       margin-top: 16rem; }
     .header_content-user {
@@ -7928,6 +7927,9 @@ body {
       display: flex;
       color: #000;
       margin-bottom: 5rem; }
+      @media (max-width: 767.98px) {
+        .header_content-icon {
+          margin-top: 2rem; } }
       .header_content-icon:hover {
         color: #8b8e93; }
       .header_content-icon svg {
@@ -7970,12 +7972,16 @@ body {
   color: #8b8e93;
   letter-spacing: 5px;
   text-transform: uppercase;
-  margin-top: 2rem; }
+  margin-top: 2rem;
+  font-size: 0.9rem; }
 
 .case-study_title {
   text-transform: capitalize;
   font-weight: bold;
   font-size: 5rem; }
+  @media (max-width: 767.98px) {
+    .case-study_title {
+      font-size: 3rem; } }
 
 .case-study .card {
   border: none !important;
@@ -8045,7 +8051,8 @@ body {
 .work_alert {
   color: #8b8e93;
   letter-spacing: 2px;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  font-size: 0.9rem; }
 
 .work_link a {
   color: #000;
@@ -8054,6 +8061,9 @@ body {
   font-size: 4rem !important;
   font-weight: bold;
   position: relative; }
+  @media (max-width: 767.98px) {
+    .work_link a {
+      font-size: 2rem !important; } }
   .work_link a:hover:before {
     position: absolute;
     bottom: -19px;
@@ -8072,6 +8082,9 @@ body {
   .footer_title {
     text-transform: capitalize;
     font-size: 2.5rem; }
+    @media (max-width: 767.98px) {
+      .footer_title {
+        font-size: 1.5rem; } }
   .footer_text {
     color: #8b8e93; }
   .footer .nav-link {
@@ -8094,6 +8107,9 @@ body {
 
 .logo {
   min-width: 200px; }
+  @media (max-width: 575.98px) {
+    .logo svg:first-child {
+      display: none; } }
 
 .menu {
   font-family: 'Helvetica Now Display DW';
@@ -8111,3 +8127,84 @@ body {
   color: #8b8e93;
   font-size: 0.9rem;
   text-transform: capitalize; }
+
+.goup {
+  position: fixed;
+  bottom: 1rem;
+  right: 0.5rem;
+  z-index: 20;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgba(15, 20, 30, 0.5); }
+  .goup_icon svg {
+    fill: #fff;
+    margin: 12px; }
+  .goup:hover {
+    background-color: #0f141e; }
+
+.loader {
+  position: relative;
+  z-index: 100;
+  background-color: #0f141e;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  overflow-y: hidden; }
+  .loader_icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 300;
+    animation-name: circleAnimate;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite; }
+  .loader_text {
+    position: absolute;
+    z-index: 400;
+    bottom: 20%;
+    left: 5%;
+    color: #fff;
+    animation-name: animateTitle;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1; }
+    .loader_text-title {
+      font-size: 1.2rem;
+      text-transform: uppercase;
+      letter-spacing: 2px; }
+    .loader_text-des {
+      font-size: 3rem;
+      text-transform: capitalize; }
+
+.hide {
+  display: none; }
+
+.show {
+  display: block; }
+
+@keyframes circleAnimate {
+  0% {
+    width: 20px;
+    height: 20px;
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 50%; }
+  0% {
+    width: 30px;
+    height: 30px;
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 50%; }
+  100% {
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border-radius: 50%; } }
+
+@keyframes animateTitle {
+  from {
+    bottom: -20%; }
+  to {
+    bottom: 20%; } }

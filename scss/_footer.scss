@@ -3,6 +3,9 @@
   &_title {
     text-transform: capitalize;
     font-size: 2.5rem;
+    @include media-breakpoint-down(md) {
+      font-size: 1.5rem;
+    }
   }
   &_text {
     color: $text-color;

@@ -8079,10 +8079,11 @@ textarea.form-control-lg {
   padding: 5rem; }
   .footer_title {
     text-transform: capitalize;
-    font-size: 2.5rem; }
+    font-size: 2.5rem;
+    margin-bottom: 2rem; }
     @media (max-width: 767.98px) {
       .footer_title {
-        font-size: 1.5rem; } }
+        font-size: 1.2rem; } }
   .footer_text {
     color: #8b8e93; }
   .footer .nav-link {
@@ -8104,6 +8105,68 @@ textarea.form-control-lg {
 
 .about-main {
   min-height: calc(100vh - 400px); }
+
+.about-header {
+  margin-top: 8rem;
+  margin-bottom: 5rem;
+  text-align: center; }
+  .about-header_small {
+    color: #8b8e93;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-size: 0.9rem; }
+  .about-header_big {
+    margin-top: 2rem;
+    text-transform: capitalize; }
+  .about-header_text {
+    color: #8b8e93;
+    margin-top: 2rem; }
+
+.services {
+  margin-top: 5rem;
+  text-align: center; }
+  .services_small {
+    font-size: 0.9rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #8b8e93; }
+  .services_big {
+    text-transform: capitalize; }
+
+.experience {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  text-align: center; }
+  .experience_small {
+    font-size: 0.9rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #8b8e93; }
+  .experience_big {
+    text-transform: capitalize; }
+
+.contact-main {
+  margin-top: 10rem; }
+  .contact-main_wrapper {
+    position: relative;
+    display: flex; }
+    .contact-main_wrapper iframe {
+      width: 80vw;
+      filter: invert(100%); }
+    .contact-main_wrapper-simple {
+      position: absolute;
+      right: -15%;
+      z-index: 30;
+      color: #ced4da;
+      text-transform: uppercase;
+      font-size: 5rem;
+      letter-spacing: 82px;
+      font-weight: bold;
+      top: -21%; }
+      .contact-main_wrapper-simple .word-2 {
+        color: #fff; }
+        .contact-main_wrapper-simple .word-2 span {
+          color: #000; }
 
 body {
   font-family: 'Helvetica Now Display DW', sans-serif;

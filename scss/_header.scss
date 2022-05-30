@@ -1,7 +1,6 @@
 .header {
-  // position: relative;
   margin-top: 5rem;
-  min-height: 70vh;
+  min-height: calc(80vh);
   &_logo {
     position: absolute;
     top: 5rem;
@@ -17,12 +16,23 @@
     // width: 25%;
     position: absolute;
     z-index: 2;
-    right: 0;
+    right: 5rem;
+    top: -4rem;
+    @include media-breakpoint-down(md) {
+      left: 50%;
+      top: 32%;
+      transform: translate(-50%, -50%);
+      right: initial;
+    }
   }
 
   &_content {
     position: absolute;
     z-index: 3;
+    @include media-breakpoint-down(md) {
+      top: 32%;
+      justify-content: center;
+    }
     .space {
       margin-top: 16rem;
     }
@@ -31,20 +41,24 @@
       letter-spacing: 5px;
       text-transform: uppercase;
       margin-top: 2rem;
+      font-size: 0.9rem;
     }
     &-job {
       text-transform: capitalize;
       font-weight: bold;
-      font-size: 5rem;
+      font-size: 4rem;
+      @include media-breakpoint-down(md) {
+        font-size: 1.5rem;
+      }
     }
     &-wrap {
+      flex-wrap: wrap;
       &-info {
         color: $text-color;
       }
     }
 
     &-icon {
-      margin-top: 2rem;
       display: flex;
       color: #000;
       margin-bottom: 5rem;
@@ -60,10 +74,13 @@
       }
     }
     &-links {
+      @include media-breakpoint-down(md) {
+        margin-top: 2rem;
+      }
       color: #000 !important;
       text-transform: capitalize;
       font-weight: bold;
-      font-size: 1.2rem;
+      font-size: 1rem;
       text-decoration: none;
       position: relative;
       &::before {

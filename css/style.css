@@ -2,6 +2,20 @@
   -webkit-box-shadow: none !important;
   box-shadow: none !important; }
 
+.offcanvas-body .navbar-nav .nav-item .nav-link:hover {
+  font-size: 4rem;
+  transition: all 0.5s ease-in;
+  position: relative; }
+  .offcanvas-body .navbar-nav .nav-item .nav-link:hover::before {
+    content: '';
+    width: 60px;
+    height: 10px;
+    background-color: #fff;
+    left: -40%;
+    top: 50%;
+    transform: translateY(-50%);
+    position: absolute; }
+
 .offcanvas-header {
   margin-top: 1rem; }
 
@@ -7864,7 +7878,7 @@ body {
 
 .header {
   margin-top: 5rem;
-  min-height: 70vh; }
+  min-height: calc(80vh); }
   .header_logo {
     position: absolute;
     top: 5rem;
@@ -7876,25 +7890,41 @@ body {
   .header_personal {
     position: absolute;
     z-index: 2;
-    right: 0; }
+    right: 5rem;
+    top: -4rem; }
+    @media (max-width: 767.98px) {
+      .header_personal {
+        left: 50%;
+        top: 32%;
+        transform: translate(-50%, -50%);
+        right: initial; } }
   .header_content {
     position: absolute;
     z-index: 3; }
+    @media (max-width: 767.98px) {
+      .header_content {
+        top: 32%;
+        justify-content: center; } }
     .header_content .space {
       margin-top: 16rem; }
     .header_content-user {
       color: #8b8e93;
       letter-spacing: 5px;
       text-transform: uppercase;
-      margin-top: 2rem; }
+      margin-top: 2rem;
+      font-size: 0.9rem; }
     .header_content-job {
       text-transform: capitalize;
       font-weight: bold;
-      font-size: 5rem; }
-    .header_content-wrap-info {
-      color: #8b8e93; }
+      font-size: 4rem; }
+      @media (max-width: 767.98px) {
+        .header_content-job {
+          font-size: 1.5rem; } }
+    .header_content-wrap {
+      flex-wrap: wrap; }
+      .header_content-wrap-info {
+        color: #8b8e93; }
     .header_content-icon {
-      margin-top: 2rem;
       display: flex;
       color: #000;
       margin-bottom: 5rem; }
@@ -7910,9 +7940,12 @@ body {
       color: #000 !important;
       text-transform: capitalize;
       font-weight: bold;
-      font-size: 1.2rem;
+      font-size: 1rem;
       text-decoration: none;
       position: relative; }
+      @media (max-width: 767.98px) {
+        .header_content-links {
+          margin-top: 2rem; } }
       .header_content-links::before {
         content: '';
         position: absolute;
@@ -8046,6 +8079,14 @@ body {
     text-transform: capitalize; }
     .footer .nav-link:hover {
       color: #8b8e93; }
+
+@media (max-width: 575.98px) {
+  .header_logo-img {
+    display: none; } }
+
+@media (min-width: 768px) {
+  .header_logo-img {
+    width: 70%; } }
 
 body {
   font-family: 'Helvetica Now Display DW', sans-serif;

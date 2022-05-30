@@ -9,6 +9,22 @@ $text-color: #8b8e93;
 
 // btn close customize
 
+.offcanvas-body .navbar-nav .nav-item .nav-link:hover {
+  font-size: 4rem;
+  transition: all 0.5s ease-in;
+  position: relative;
+  &::before {
+    content: '';
+    width: 60px;
+    height: 10px;
+    background-color: #fff;
+    left: -40%;
+    top: 50%;
+    transform: translateY(-50%);
+    position: absolute;
+  }
+}
+
 .offcanvas-header {
   margin-top: 1rem;
 }

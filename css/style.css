@@ -7883,6 +7883,8 @@ textarea.form-control-lg {
     right: 50%; }
     .header_logo-img {
       opacity: 0.05; }
+  .header .header .row {
+    align-items: first baseline; }
   .header_personal {
     position: absolute;
     z-index: 2;
@@ -7894,12 +7896,16 @@ textarea.form-control-lg {
         top: 32%;
         transform: translate(-50%, -50%);
         right: initial; } }
+    @media (max-width: 575.98px) {
+      .header_personal {
+        left: 30%;
+        margin-bottom: 2rem; } }
   .header_content {
     position: absolute;
     z-index: 3; }
     @media (max-width: 767.98px) {
       .header_content {
-        top: 32%;
+        top: 40%;
         justify-content: flex-start; } }
     .header_content .space {
       margin-top: 16rem; }
@@ -8021,18 +8027,13 @@ textarea.form-control-lg {
   height: 40px;
   border-radius: 50%;
   display: flex;
-  justify-content: center;
-  align-items: center; }
+  justify-content: center; }
   .contact_icon {
-    text-decoration: none; }
+    text-decoration: none;
+    text-align: center;
+    padding: 6px; }
   .contact_icon svg {
-    fill: #fff;
-    margin-top: 24px;
-    margin-left: 18px; }
-  .contact:hover .contact_icon svg {
-    margin-top: 0px;
-    margin-left: 0px;
-    margin-right: 10px; }
+    fill: #fff; }
   .contact_name {
     opacity: 0;
     color: #fff; }

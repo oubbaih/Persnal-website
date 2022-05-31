@@ -11,6 +11,9 @@
       opacity: 0.05;
     }
   }
+  .header .row {
+    align-items: first baseline;
+  }
 
   &_personal {
     // width: 25%;
@@ -24,13 +27,17 @@
       transform: translate(-50%, -50%);
       right: initial;
     }
+    @include media-breakpoint-down(sm) {
+      left: 30%;
+      margin-bottom: 2rem;
+    }
   }
 
   &_content {
     position: absolute;
     z-index: 3;
     @include media-breakpoint-down(md) {
-      top: 32%;
+      top: 40%;
       justify-content: flex-start;
     }
     .space {

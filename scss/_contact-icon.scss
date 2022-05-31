@@ -9,20 +9,16 @@
   border-radius: 50%;
   display: flex;
   justify-content: center;
-  align-items: center;
+
   &_icon {
     text-decoration: none;
+    text-align: center;
+    padding: 6px;
   }
   &_icon svg {
     fill: #fff;
-    margin-top: 24px;
-    margin-left: 18px;
   }
-  &:hover &_icon svg {
-    margin-top: 0px;
-    margin-left: 0px;
-    margin-right: 10px;
-  }
+
   &_name {
     opacity: 0;
     color: #fff;

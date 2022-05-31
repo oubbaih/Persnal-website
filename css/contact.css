@@ -16,6 +16,8 @@
       letter-spacing: 82px;
       font-weight: bold;
       top: -21%; }
+      .contact-main_wrapper-simple p:not(:first-child) {
+        letter-spacing: 100px; }
       .contact-main_wrapper-simple .word-2 {
         color: #fff; }
         .contact-main_wrapper-simple .word-2 span {

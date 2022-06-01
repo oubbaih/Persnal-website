@@ -1,13 +1,22 @@
-@import 'topnavigation';
+// custom bootstrap file
 @import 'custom';
-@import 'header';
-@import 'case-study';
-@import 'contact-icon';
-@import 'work';
-@import 'footer';
-@import 'media-query';
-@import 'about';
-@import 'contact';
+ // layouts 
+ @import 'layouts/_topnavigation';
+@import 'layouts/_footer';
+// compoents files 
+@import 'components/_header';
+@import 'components/_case-study';
+@import 'components/_contact-icon';
+@import 'components/_work';
+@import 'components/_media-query';
+
+// pages files
+@import 'pages/about';
+@import 'pages/contact';
+@import 'pages/portfolio';
+
+
+
 body {
   font-family: 'Helvetica Now Display DW', sans-serif;
   overflow-x: hidden;
